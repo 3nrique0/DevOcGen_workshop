@@ -22,6 +22,46 @@ There are 2 ways to transmit the container:
 
 * From a `.sif` file: This file will contin all the software, environment and os to run the software.
 
+---
+
+## Instructions -- Install
+
+1. [Install Pixi]:  https://pixi.sh/latest/installation/
+1. Clone this repo
+1. Change directory to the repo of this git
+1. Install the workspace: `pixi install`
+    - This will create a `.pixi\` where the packages will be installed
+1. Run the task to install RZooRoh since it is neither available on conda-forge nor bioconda: `pixi run install_rzooroh`
+1. Test if the package is loaded correctly from R with another task: 'pixi run test rlibs'
+
+## Instructions -- Run
+
+There are two ways to acces the software in this workspace:
+
+### 1- Pixi shell
+
+Run `pixi shell`. The prompt will change on your environment it should look like a conda environment:
+
+```
+user@computer:DevOcGen_workshop$ pixi shell
+(devocgen_workshop_installs) user@computer:DevOcGen_workshop$
+
+(devocgen_workshop_installs) user@computer:DevOcGen_workshop$ exit
+user@computer:DevOcGen_workshop$
+```
+
+### 2- Activate environment on request before running a command
+
+
+Prefix `pixi run` to your usual commands.
+It will make the workspace run the software without "activating" the environment.
+
+```
+user@computer:DevOcGen_workshop$ pixi run bcftools
+```
+
+---
+
 ## The workshops's tools
 
 ### MG 
@@ -37,5 +77,4 @@ Tools:
 - [x] Replication on the same computer
 - [ ] Replication on a different computer
 - [ ] Replilcation on a different OS 
-
 
