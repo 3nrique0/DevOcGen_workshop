@@ -28,7 +28,7 @@ There are 2 ways to transmit the container:
 
 1. [Install Pixi]:  https://pixi.sh/latest/installation/
 1. Clone this repo
-1. Change directory to the repo of this git
+1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_rzooroh`
 1. Install the workspace: `pixi install`
     - This will create a `.pixi\` where the packages will be installed
 1. Run the task to install RZooRoh since it is neither available on conda-forge nor bioconda: `pixi run install_rzooroh`
@@ -43,11 +43,11 @@ There are two ways to acces the software in this workspace:
 Run `pixi shell`. The prompt will change on your environment it should look like a conda environment:
 
 ```
-user@computer:DevOcGen_workshop$ pixi shell
-(devocgen_workshop_installs) user@computer:DevOcGen_workshop$
+user@computer:ws_rzooroh$ pixi shell
+(devocgen_workshop_installs) user@computer:ws_rzooroh$
 
-(devocgen_workshop_installs) user@computer:DevOcGen_workshop$ exit
-user@computer:DevOcGen_workshop$
+(devocgen_workshop_installs) user@computer:ws_rzoorohp$ exit
+user@computer:ws_rzooroh$
 ```
 
 ### 2- Activate environment on request before running a command
