@@ -33,9 +33,9 @@ Tools:
 * Samtools
 * BCFtools
 
-[] Installation process: **Done**
-[] Replication on the same computer: **Done**
-[] Replication on a different computer
-[] Replilcation on a different OS 
+- [x] Installation process
+- [x] Replication on the same computer
+- [ ] Replication on a different computer
+- [ ] Replilcation on a different OS 
 
 
