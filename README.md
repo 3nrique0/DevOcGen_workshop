@@ -26,6 +26,8 @@ There are 2 ways to transmit the container:
 
 ## Instructions -- Install
 
+Each workshop will have it's own directory and it's own workspace/environment
+
 1. [Install Pixi](https://pixi.sh/latest/installation/)
 1. Clone this repo
 1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_rzooroh`
@@ -43,6 +45,7 @@ There are two ways to acces the software in this workspace:
 Run `pixi shell`. The prompt will change on your environment it should look like a conda environment:
 
 ```
+# Shell example
 user@computer:ws_rzooroh$ pixi shell
 (devocgen_workshop_installs) user@computer:ws_rzooroh$
 
@@ -57,14 +60,21 @@ Prefix `pixi run` to your usual commands.
 It will make the workspace run the software without "activating" the environment.
 
 ```
+# Shell example
 user@computer:DevOcGen_workshop$ pixi run bcftools
+
+Program: bcftools (Tools for variant calling and manipulating VCFs and BCFs)
+License: GNU GPLv3+, due to use of the GNU Scientific Library
+Version: 1.22 (using htslib 1.22.1)
+
+
 ```
 
 ---
 
 ## The workshops's tools
 
-### MG 
+### RZooRoH 
 
 Tools:
 * R 
@@ -78,3 +88,27 @@ Tools:
 - [ ] Replication on a different computer
 - [ ] Replilcation on a different OS 
 
+### Selnetime
+
+* snakemake-minimal
+* matplotlib
+* graphviz
+* scipy
+* sympy
+* numba
+* pandas
+* tbb
+* r-base
+* r-essentials
+* r-tidyverse
+* r-scales
+* r-patchwork
+* selnetime
+
+- [x] Installation process
+    - [x] Use Pypi dependencies from pixi
+* There is a warning from `graphviz`.
+    - [ ] Is it important ?
+- [ ] Replication on the same computer
+- [ ] Replication on a different computer
+- [ ] Replilcation on a different OS 
