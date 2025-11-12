@@ -26,7 +26,7 @@ There are 2 ways to transmit the container:
 
 ## Instructions -- Install
 
-1. [Install Pixi]:  https://pixi.sh/latest/installation/
+1. [Install Pixi](https://pixi.sh/latest/installation/)
 1. Clone this repo
 1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_rzooroh`
 1. Install the workspace: `pixi install`
