@@ -74,6 +74,9 @@ Version: 1.22 (using htslib 1.22.1)
 
 ## The workshops's tools
 
+On the manifest the supported platforms are: "linux-64" and "osx-64".
+Test on "osx-64" has not been done
+
 ### RZooRoH 
 
 Tools:
