@@ -61,7 +61,7 @@ It will make the workspace run the software without "activating" the environment
 
 ```
 # Shell example
-user@computer:DevOcGen_workshop$ pixi run bcftools
+user@computer:ws_rzoorohp$ pixi run bcftools
 
 Program: bcftools (Tools for variant calling and manipulating VCFs and BCFs)
 License: GNU GPLv3+, due to use of the GNU Scientific Library
@@ -75,7 +75,7 @@ Version: 1.22 (using htslib 1.22.1)
 ## The workshops's tools
 
 On the manifest the supported platforms are: "linux-64" and "osx-64".
-Test on "osx-64" has not been done
+Test on "osx-64" has not been done.
 
 ### RZooRoH 
 
@@ -111,7 +111,20 @@ Tools:
 - [x] Installation process
     - [x] Use Pypi dependencies from pixi
 * There is a warning from `graphviz`.
-    - [ ] Is it important ?
+    - [x] Is it important ? **Probably not**
+- [ ] Replication on the same computer
+- [ ] Replication on a different computer
+- [ ] Replilcation on a different OS 
+- [ ] Dependency prunning
+
+### python tskit slim
+
+- python
+- jupyterlab
+- slim
+- tskit
+
+- [x] Installation process
 - [ ] Replication on the same computer
 - [ ] Replication on a different computer
 - [ ] Replilcation on a different OS 
