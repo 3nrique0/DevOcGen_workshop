@@ -128,3 +128,20 @@ Tools:
 - [ ] Replication on the same computer
 - [ ] Replication on a different computer
 - [ ] Replilcation on a different OS 
+
+### snif
+
+- python =>3.6.9 with base libs:
+    - argparse
+    - json
+    - os
+- scipy =>1.2
+- matplotlib
+- numpy
+- LaTeX with pgfplots(1.15) - optional if too heavy
+
+- [x] Python Installation process
+- [ ] LaTeX installation
+- [ ] Replication on the same computer
+- [ ] Replication on a different computer
+- [ ] Replilcation on a different OS 
