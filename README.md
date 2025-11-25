@@ -1,6 +1,7 @@
 # DevOcGen Workshop
 
-Installation of software necessary for the workshop of DevOcGen project held on 1-4 december 2025.[Information about the event](https://biodivoc.edu.umontpellier.fr/recherche/projets-consortium/projet-de-consortium-devocgen/semaine-de-restitution-du-projet-devocgen/)
+Installation of software necessary for the workshop of DevOcGen project held on 1-4 december 2025.
+[Information about the venue](https://biodivoc.edu.umontpellier.fr/recherche/projets-consortium/projet-de-consortium-devocgen/semaine-de-restitution-du-projet-devocgen/)
 
 
 
@@ -13,7 +14,7 @@ Each workshop has it's own directory and it's own pixi environment.
 1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_selnetime`
 1. Install the workspace: `pixi install`
     - This will create a `.pixi\` where the packages will be installed
-1. The workshops **X** and **Y** require some extra steps. Further information in the README.md of each workshop.
+1. The workshop **RZooRoh** require some extra steps. Further information in the README.md of each workshop.
 
 
 ## Run Instructions
@@ -68,3 +69,5 @@ We would like to thank our kind sponsors:
 <img src=".img/biodivoc.png" alt="BiodivOc" height="200">
 <img src=".img/region.png" alt="BiodivOc" height="200">
 <img src=".img/UM.png" alt="BiodivOc" height="200">
+
+![BiodivOc https://biodivoc.edu.umontpellier.fr/](".img/biodivoc.png")
