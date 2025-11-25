@@ -6,9 +6,9 @@ By :
 
 Tutorial code source: https://github.com/3nrique0/DevOcGen_workshop/tree/main
 
-## Tutojhsdahsdlhfdggs
+## Download the code for this workshop
 
-Finish installation for this workshop:
+1. Finish installation for this workshop:
 ```
 pixi run install_tuto
 ```
