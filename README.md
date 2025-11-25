@@ -67,5 +67,7 @@ Version: 1.22 (using htslib 1.22.1)
 We would like to thank our kind sponsors:
 
 ![BioDivOc](.img/biodivoc.png)
+
 ![Region Occitanie](.img/region_resized.png)
+
 ![Université de Montpellier](.img/UM_resized.png)
