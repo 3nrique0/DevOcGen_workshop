@@ -1,63 +1,52 @@
-# DevOcGen_workshop
+# DevOcGen Workshop
 
-Installation of software necessary for the workshop of DevOcGen project held on december 2025.
+Installation of software necessary for the workshop of DevOcGen project held on 1-4 december 2025.[Information about the event](https://biodivoc.edu.umontpellier.fr/recherche/projets-consortium/projet-de-consortium-devocgen/semaine-de-restitution-du-projet-devocgen/)
 
-**This is under development and under tests**
 
-## Environment or Container
 
-Tools: Pixi or Apptainer
+## Installation Instructions
 
-### Environment and package managers - Pixi
-They are easier to install and smaller to convey.
-If all the software is available to be installed, this will be the prioritary choice.
+Each workshop has it's own directory and it's own pixi environment.
 
-So far the test is ongoing with **PIXI**.
-
-### Containers - Apptainer
-Containers are more replicable since they replicate the OS environment.
-There are 2 ways to transmit the container:
-
-* From a `.def` file: Creating a .sif from a .def can be a bit slow since it means to insall the OS and then install (maybe compile) each piece of software.
-
-* From a `.sif` file: This file will contin all the software, environment and os to run the software.
-
----
-
-## Instructions -- Install
-
-Each workshop will have it's own directory and it's own workspace/environment
-
-1. [Install Pixi](https://pixi.sh/latest/installation/)
+1. To install pixi follow the instructions for your OS. [Install Pixi](https://pixi.sh/latest/installation/)
 1. Clone this repo
-1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_rzooroh`
+1. Change directory to the repo of this git and to the workshop directory: `cd DevOcGen_workshop/ws_selnetime`
 1. Install the workspace: `pixi install`
     - This will create a `.pixi\` where the packages will be installed
-1. Run the task to install RZooRoh since it is neither available on conda-forge nor bioconda: `pixi run install_rzooroh`
-1. Test if the package is loaded correctly from R with another task: 'pixi run test rlibs'
+1. The workshops **X** and **Y** require some extra steps. Further information in the README.md of each workshop.
 
-## Instructions -- Run
+
+## Run Instructions
 
 There are two ways to acces the software in this workspace:
 
-### 1- Pixi shell
+1. **Activate a pixi shell**
+    - This allows you to change directories and acces the workshop tools wherever your work directory will be.
 
-Run `pixi shell`. The prompt will change on your environment it should look like a conda environment:
+2. **Prefix commands** with `pixi run`
+    - This allows you to change environment with just changing your working directory.
+
+### 1. Pixi shell
+
+Run `pixi shell`. The prompt will change on your environment it should look like a conda environment.
+Type `exit` to close the environment.
+
+Shell example:
 
 ```
-# Shell example
 user@computer:ws_rzooroh$ pixi shell
 (devocgen_workshop_installs) user@computer:ws_rzooroh$
 
 (devocgen_workshop_installs) user@computer:ws_rzoorohp$ exit
+
 user@computer:ws_rzooroh$
 ```
 
-### 2- Activate environment on request before running a command
+### 2. Preffix commands: Activate environment on request before running a command
 
 
 Prefix `pixi run` to your usual commands.
-It will make the workspace run the software without "activating" the environment.
+It will make the workspace run the software without "permamently activating" the environment.
 
 ```
 # Shell example
@@ -72,76 +61,10 @@ Version: 1.22 (using htslib 1.22.1)
 
 ---
 
-## The workshops's tools
+## Thank you
 
-On the manifest the supported platforms are: "linux-64" and "osx-64".
-Test on "osx-64" has not been done.
+We would like to thank our kind sponsors:
 
-### RZooRoH 
-
-Tools:
-* R 
-* RZooRoH
-* Plink
-* Samtools
-* BCFtools
-
-- [x] Installation process
-- [x] Replication on the same computer
-- [ ] Replication on a different computer
-- [ ] Replilcation on a different OS 
-
-### Selnetime
-
-* snakemake-minimal
-* matplotlib
-* graphviz
-* scipy
-* sympy
-* numba
-* pandas
-* tbb
-* r-base
-* r-essentials
-* r-tidyverse
-* r-scales
-* r-patchwork
-* selnetime
-
-- [x] Installation process
-    - [x] Use Pypi dependencies from pixi
-* There is a warning from `graphviz`.
-    - [x] Is it important ? **Probably not**
-- [ ] Replication on the same computer
-- [ ] Replication on a different computer
-- [ ] Replilcation on a different OS 
-- [ ] Dependency prunning
-
-### python tskit slim
-
-- python
-- jupyterlab
-- slim
-- tskit
-
-- [x] Installation process
-- [ ] Replication on the same computer
-- [ ] Replication on a different computer
-- [ ] Replilcation on a different OS 
-
-### snif
-
-- python =>3.6.9 with base libs:
-    - argparse
-    - json
-    - os
-- scipy =>1.2
-- matplotlib
-- numpy
-- LaTeX with pgfplots(1.15) - optional if too heavy
-
-- [x] Python Installation process
-- [ ] LaTeX installation
-- [ ] Replication on the same computer
-- [ ] Replication on a different computer
-- [ ] Replilcation on a different OS 
+<img src=".img/biodivoc.png" alt="BiodivOc" height="200">
+<img src=".img/region.png" alt="BiodivOc" height="200">
+<img src=".img/UM.png" alt="BiodivOc" height="200">
