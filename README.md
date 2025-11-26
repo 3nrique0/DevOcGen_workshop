@@ -1,6 +1,9 @@
 # DevOcGen Workshop
 
 Installation of software necessary for the workshop of DevOcGen project held on 1-4 december 2025.
+
+**Requirements**: A Linux computer or a MacOS computer. The environments contain mostly python and R libraries that could work on windows, however we cannot grant they will.
+
 [Information about the venue](https://biodivoc.edu.umontpellier.fr/recherche/projets-consortium/projet-de-consortium-devocgen/semaine-de-restitution-du-projet-devocgen/)
 
 
