@@ -5,25 +5,29 @@ name = "devocgen_workshop_installs"
 platforms = ["linux-64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 
+[tasks.install_rzooroh]
+description = "Install the RZooRoH package from CRAN"
+cmd = """
+Rscript -e "install.packages('RZooRoH', repos='https://cloud.r-project.org')"
+"""
+
 [tasks.test_rlibs]
 description = "Test if the required libraries installed from CRAN are loaded properly"
 cmd = """
-R -q -s --vanilla -e "library('RZooRoH'); print('Package RZooRoH loaded successfully')
-     library('SNPRelate'); print('Package SNPRelate loaded successfully')"
+R -e "library('RZooRoH'); print('Package loaded successfully')"
 """
 
-[tasks.install_rlibs]
+[tasks.install_bioc]
 description = "Test if the required libraries installed from CRAN are loaded properly"
 cmd = """
-R -q -s -e "options(repos = c(CRAN = 'https://cloud.r-project.org'))
-    if (!require('BiocManager', quietly = TRUE))
+R -e "if (!require('BiocManager', quietly = TRUE))
     install.packages('BiocManager')
-    BiocManager::install(version = '3.22')
-    BiocManager::install('RZooRoH')
-    BiocManager::install('SNPRelate')"
+    BiocManager::install(version = '3.22')"
 """
 
 [dependencies]
 r-base = ">=4.5.2,<4.6"
 r-essentials = ">=4.5,<5"
 plink = ">=1.90b7.7,<2"
+samtools = ">=1.22.1,<2"
+bcftools = ">=1.22,<2"

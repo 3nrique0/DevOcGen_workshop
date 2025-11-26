@@ -2,3 +2,4 @@
 .pixi/*
 !.pixi/config.toml
 ws_selnetime/selnetime-tutorial/
+.list_packages_tasks.md
