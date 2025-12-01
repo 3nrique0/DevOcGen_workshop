@@ -4,7 +4,7 @@ By :
 - Simon Boitard
 - Paul Bunel
 
-Tutorial code source: https://github.com/3nrique0/DevOcGen_workshop/tree/main
+Tutorial code source: https://forge.inrae.fr/genetic-time-series/selnetime-tutorial
 
 ## Download the code for this workshop
 
