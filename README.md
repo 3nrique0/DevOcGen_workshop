@@ -6,7 +6,10 @@ Installation of software necessary for the workshop of DevOcGen project held on 
 
 [Information about the venue](https://biodivoc.edu.umontpellier.fr/recherche/projets-consortium/projet-de-consortium-devocgen/semaine-de-restitution-du-projet-devocgen/)
 
+## Update your installation
 
+Last update: 1st december 2025 17h55
+If you have already cloned this repository before the date above, pull this repo again.
 
 ## Installation Instructions
 

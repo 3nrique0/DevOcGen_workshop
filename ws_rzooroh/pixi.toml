@@ -8,8 +8,10 @@ version = "0.1.0"
 [tasks.test_rlibs]
 description = "Test if the required libraries installed from CRAN are loaded properly"
 cmd = """
-R -q -s --vanilla -e "library('RZooRoH'); print('Package RZooRoH loaded successfully')
-     library('SNPRelate'); print('Package SNPRelate loaded successfully')"
+R -q -s --vanilla -e "library('RZooRoH'); print('Package RZooRoH loaded successfully');
+     packageVersion('RZooRoH');
+     library('SNPRelate'); print('Package SNPRelate loaded successfully');
+     packageVersion('SNPRelate');"
 """
 
 [tasks.install_rlibs]
@@ -19,8 +21,8 @@ R -q -s -e "options(repos = c(CRAN = 'https://cloud.r-project.org'))
     if (!require('BiocManager', quietly = TRUE))
     install.packages('BiocManager')
     BiocManager::install(version = '3.22')
-    BiocManager::install('RZooRoH')
-    BiocManager::install('SNPRelate')"
+    BiocManager::install('RZooRoH', force = TRUE)
+    BiocManager::install('SNPRelate', force = TRUE)"
 """
 
 [dependencies]
