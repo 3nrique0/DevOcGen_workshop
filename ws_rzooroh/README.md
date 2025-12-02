@@ -6,6 +6,7 @@ Presenters:
 
 Data for this workshop can be downloaded [here](https://filesender.renater.fr/?s=download&token=6f29876f-6be2-423b-bfd0-5f942bbeaa69).
 
+That link will only be available around the time of the workshop.
 
 ## Message from the presenters
 
