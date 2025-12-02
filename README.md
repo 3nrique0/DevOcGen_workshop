@@ -8,7 +8,7 @@ Installation of software necessary for the workshop of DevOcGen project held on 
 
 ## Update your installation
 
-Last update: 1st december 2025 17h55
+Last update: **2nd december 2025 11h33**
 If you have already cloned this repository before the date above, pull this repo again.
 
 ## Installation Instructions
