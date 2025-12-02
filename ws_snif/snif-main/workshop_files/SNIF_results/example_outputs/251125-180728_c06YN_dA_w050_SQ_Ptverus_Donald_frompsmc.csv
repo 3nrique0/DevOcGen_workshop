@@ -1,0 +1,4 @@
+SEP=,
+id,d_omega,d_visual,rounds,evaluations,failed evals,duration,inf. n,inf. t0,inf. t1,inf. t2,inf. t3,inf. t4,inf. t5,inf. M0,inf. M1,inf. M2,inf. M3,inf. M4,inf. M5,inf. s0,inf. s1,inf. s2,inf. s3,inf. s4,inf. s5,inf. N_ref,source filename
+1,946993,362777,30,5953640,0,153.694,46,0,7190.27,9160.18,16760.2,36406.2,103622,0.266849,5.4365,49.5522,0.532951,9.45385,0.231776,1,1,1,1,1,1,253.482,./workshop_files/input_data/Pan_troglodytes_verus_Donald.psmc
+2,818628,317916,30,5939640,0,310.289,53,0,6581.26,8626.5,18572.6,36411.8,122675,0.226261,1.06633,47.6319,0.504429,10.3248,0.218987,1,1,1,1,1,1,211.821,./workshop_files/input_data/Pan_troglodytes_verus_Donald.psmc

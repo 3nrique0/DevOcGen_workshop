@@ -1,3 +1,8 @@
 # Atelier SNIF
 
-By: Camille Steux, Lounes Chikhi
+Presenters:
+
+* Camille Steux
+* Lounes Chikhi
+
+Slides and scripts are present in this worshop directory.

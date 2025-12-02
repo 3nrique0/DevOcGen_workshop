@@ -1,0 +1,74 @@
+{
+    "inference_parameters": {
+        "data_source": "./workshop_files/input_data/Pan_troglodytes_verus_Donald_inferred-model-004.ms",
+        "source_type": "MSCommand",
+        "IICR_type": "T_sim",
+        "infer_scale": true,
+        "data_cutoff_bounds": [
+            400.0,
+            800000.0
+        ],
+        "data_time_intervals": 64,
+        "distance_function": "ApproximatePDF",
+        "distance_parameter": 0.5,
+        "distance_max_allowed": 7000.0,
+        "distance_computation_interval": [
+            400.0,
+            800000.0
+        ],
+        "rounds_per_test_bounds": [
+            30,
+            30
+        ],
+        "repetitions_per_test": 2,
+        "number_of_components": 6,
+        "bounds_islands": [
+            2,
+            100
+        ],
+        "bounds_migrations_rates": [
+            0.05,
+            50
+        ],
+        "bounds_deme_sizes": [
+            1,
+            1
+        ],
+        "bounds_event_times": [
+            400.0,
+            800000.0
+        ],
+        "bounds_effective_size": [
+            10,
+            10000
+        ],
+        "psmc_mutation_rate": 1.5e-08,
+        "psmc_number_of_sequences": null,
+        "psmc_length_of_sequences": null,
+        "ms_reference_size": 352,
+        "ms_simulations": 1000000
+    },
+    "optimization_parameters": {
+        "strategy": "best2exp",
+        "maxiter": 1000,
+        "popsize": 15,
+        "tol": 0.01,
+        "mutation": [
+            0.5,
+            1
+        ],
+        "recombination": 0.7,
+        "workers": 1
+    },
+    "settings": {
+        "static_library_location": "./libs/libsnif.so",
+        "custom_filename_tag": "Ptverus_Donald_fromT2",
+        "output_directory": "./workshop_files/SNIF_results",
+        "default_output_dirname": "./SNIF_results_default"
+    },
+    "source_filenames": [
+        "./workshop_files/input_data/Pan_troglodytes_verus_Donald_inferred-model-004.ms"
+    ],
+    "final_output_directory": "./workshop_files/SNIF_results",
+    "basename": "251125-181445_c06YN_dA_w050_MT_Ptverus_Donald_fromT2"
+}
